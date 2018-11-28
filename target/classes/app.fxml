@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.controller.LibraryController">
+    <children>
+        <TreeTableView fx:id="vocabularyTreeTableView" layoutX="5.0" layoutY="4.0" prefHeight="351.0" prefWidth="590.0" showRoot="false" stylesheets="@styles.css">
+            <columns>
+                <TreeTableColumn fx:id="firstTreeTableColumn" prefWidth="200.0" resizable="false" text="Russian" />
+                <TreeTableColumn fx:id="secondTreeTableColumn" minWidth="0.0" prefWidth="196.0" resizable="false" text="Foreign" />
+                <TreeTableColumn fx:id="thirdTreeTableColumn" prefWidth="194.0" resizable="false" text="Language" />
+            </columns>
+        </TreeTableView>
+        <Button layoutX="14.0" layoutY="365.0" mnemonicParsing="false" onAction="#OnAdd" prefHeight="25.0" prefWidth="100.0" stylesheets="@styles.css" text="Add" />
+        <Button layoutX="250.0" layoutY="365.0" mnemonicParsing="false" onAction="#OnEdit" prefHeight="25.0" prefWidth="100.0" stylesheets="@styles.css" text="Edit" />
+        <Button layoutX="486.0" layoutY="365.0" mnemonicParsing="false" onAction="#OnDelete" prefHeight="25.0" prefWidth="100.0" stylesheets="@styles.css" text="Delete" />
+    </children>
+</AnchorPane>
